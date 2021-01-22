@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <title>Projekt TI</title>
+</head>
+<body>
+    <header>
+        <h1>Zderzenia sprężyste</h1>
+    </header>
+    <article>
+        <h2>Słowem wstępu</h2>
+        <p>Przykładami zderzeń sprężystych mogą być: zderzenia cząsteczek gazu doskonałego, zderzenia elektronów, rozproszenie niskoenergetycznej cząstki alfa na jądrze atomowym (eksperyment Rutherforda) i wiele innych z mikroświata. 
+            W analizie zderzenia sprężystego zakłada się, że nie występują lub są pomijane oddziaływania z innymi ciałami oznacza to, że podczas zderzenia spełniona jest zasada zachowania pędu, przyjmuje się też, że oddziaływania podczas zderzenia są sprężyste dlatego energia kinetyczna jest zachowana.
+        </p>
+        <div id="equations">
+            <p>Całkowita energia kinetyczna po zderzeniu jest równa energii kinetycznej ciał przed zderzeniem:</p>
+            <p>$$ {m_1v_1^2 \over 2} + {m_2v_2^2 \over 2}={m_1u_1^2 \over 2} + {m_2u_2^2 \over 2}$$</p>
+            <p>Całkowity pęd po zderzeniu jest równy pędowi przed zderzeniem:</p>
+            <p>$$ m_1v_1+m_2v_2 = m_1u_1 + m_2u_2$$</p>
+        </div>
+    </article>
+    <br>
+    <div id="all">
+        <p class="description">Poniżej przedstawiona jest symulacja zderzeń idealnie sprężystych. Na początku cząsteczki o tej samej masie rozmieszczane są w losowych miejscach i 
+            nadawane są im losowe prędkości. Potem odbijają się jak szalone! Możesz dodać swoją własną cząsteczkę o wybranych parametrach i zaobserwować jak układ na to zareaguje. Miłej zabawy!
+        </p>
+        <div id="add_particle">
+            <p class="add">Dodaj swoją własną kulkę!</p>
+            <div id="form_div">
+                <label for="mass">Masa (pomiędzy 1 a 30):</label>
+                <input type="number" id="mass" name="mass" min="1" max="30" required>
+                <br>
+                <label for="vx">Prędkość w kierunku poziomym (pomiędzy 1 a 8):</label>
+                <input type="number" id="vx" name="vx" min="1" max="8">
+                <br>
+                <label for="vy">Prędkość w kierunku pionowym (pomiędzy 1 a 8):</label>
+                <input type="number" id="vy" name="vy" min="1" max="8">
+                <br>
+                <label for="add_color">Kolor twojej cząsteczki:</label>
+                <input type="color" id="add_color" name="add_color" value="#e66465">
+            </div>
+            <button id="button_add">Naciśnij mnie żeby dodać kulkę!</button>
+            <br>
+
+            <div id="has_added"></div>
+        </div>
+
+        <div id="canvas_div">
+            <label for="colors">Zmień kolor cząsteczek na swój wymarzony!</label>
+            <input type="color" id="colors" name="colors" value="#0000ff">
+            <br>
+            <canvas id="canvas1" width="600" height="500"></canvas>
+            <script src="collision.js"></script>
+        </div>
+    </div>
+</body>
+</html>

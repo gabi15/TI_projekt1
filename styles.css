@@ -1,0 +1,78 @@
+
+body{
+    background-color:aliceblue;    
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+canvas{
+    border: 2px solid black;
+    font-size: 20px;
+    background-color: white;
+}
+
+label[for="colors"]{
+    font-size: 24px;
+}
+
+#all{
+    position: relative;
+}
+
+#add_particle{
+    position:absolute;
+    left:700px;
+    font-size: 24px;
+}
+
+#canvas_div
+{
+    position:absolute;
+    left:10px;   
+}
+
+#form_div{
+    padding: 15px;
+    border: 2px solid black;
+    background-color: rgb(174, 171, 197);
+}
+
+input{
+    font-size: 24px;
+    margin: 10px;
+}
+
+.add{
+    font-size: 30px;
+    margin:10px
+}
+
+button{
+    font-size: 20px;
+    padding: 5px;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    margin-top: 5px
+}
+
+article{
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+#equations{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+}
+
+.description{
+    font-size: 20px;
+    margin-left: 10px;
+}
