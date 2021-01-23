@@ -192,19 +192,19 @@ function init() {
     let r = 20;
     let x = Math.random()*(w-2*r)+r;
     let y = Math.random()* (h-2*r)+r;
-    if(i!==0)
-    {
-      for(let j=0; j<particles.length; j++)
-      {
-        if(distance(x, y,particles[j].x, particles[j].y)<= r+particles[j].radius)
-        {
-          let x = Math.random()*(w-2*r)+r;
-          let y = Math.random()* (h-2*r)+r;
+    // if(i!==0)
+    // {
+    //   for(let j=0; j<particles.length; j++)
+    //   {
+    //     if(distance(x, y,particles[j].x, particles[j].y)<= r+particles[j].radius)
+    //     {
+    //       let x = Math.random()*(w-2*r)+r;
+    //       let y = Math.random()* (h-2*r)+r;
 
-          j=-1;
-        }
-      }
-    }
+    //       j=-1;
+    //     }
+    //   }
+    // }
     particles.push(new Particle(x,y,r,'blue'))
   }
 }
